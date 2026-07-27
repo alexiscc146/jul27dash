@@ -5643,7 +5643,7 @@
         auth: {
           clientId: MSAL_CONFIG.clientId,
           authority: 'https://login.microsoftonline.com/' + MSAL_CONFIG.tenantId,
-          redirectUri: window.location.origin,
+          redirectUri: window.location.origin + window.location.pathname,
         },
         cache: { cacheLocation: 'localStorage', storeAuthStateInCookie: false },
       });
